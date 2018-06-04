@@ -12,7 +12,7 @@ public class BeforeLoginFilter extends GenericFilterBean {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("This is a filter before UsernamePasswordAuthenticationFilter.");
+        System.out.println("===BeforeLoginFilter.====");
         // 继续调用 Filter 链
         filterChain.doFilter(servletRequest, servletResponse);
     }

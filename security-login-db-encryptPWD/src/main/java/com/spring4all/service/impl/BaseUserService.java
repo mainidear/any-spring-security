@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-@Log4j
+//@Log4j
 public class BaseUserService implements UserService {
 
     private final UserMapper userMapper;

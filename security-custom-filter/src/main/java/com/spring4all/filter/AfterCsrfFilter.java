@@ -12,7 +12,7 @@ public class AfterCsrfFilter extends GenericFilterBean {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("This is a filter after CsrfFilter.");
+        System.out.println("===AfterCsrfFilter.=====");
         // 继续调用 Filter 链
         filterChain.doFilter(servletRequest, servletResponse);
     }
